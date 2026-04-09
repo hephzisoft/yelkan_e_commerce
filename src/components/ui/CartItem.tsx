@@ -30,14 +30,14 @@ export default function CartItem({ item, onUpdateQuantity, onRemove }: CartItemP
           <div className="flex items-center editorial-border bg-gray-50 h-10 w-24 justify-between px-2">
             <button 
               onClick={() => onUpdateQuantity(product.id, Math.max(1, quantity - 1))}
-              className="text-gray-500 hover:text-orange-500 font-light text-lg transition-colors px-1"
+              className="text-gray-500 hover:text-brand-accent font-light text-lg transition-colors px-1"
             >
               -
             </button>
             <span className="text-gray-900 font-bold">{quantity}</span>
             <button 
               onClick={() => onUpdateQuantity(product.id, quantity + 1)}
-              className="text-gray-500 hover:text-orange-500 font-light text-lg transition-colors px-1"
+              className="text-gray-500 hover:text-brand-accent font-light text-lg transition-colors px-1"
             >
               +
             </button>

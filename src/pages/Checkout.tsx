@@ -18,14 +18,14 @@ export default function Checkout() {
   if (step === 2) {
     return (
       <div className="max-w-3xl mx-auto px-4 py-32 text-center border-b border-gray-200 pb-16">
-        <CheckCircle2 className="w-24 h-24 text-orange-500 mx-auto mb-12" strokeWidth={1} />
+        <CheckCircle2 className="w-24 h-24 text-brand-accent mx-auto mb-12" strokeWidth={1} />
         <h1 className="text-6xl font-black font-serif italic text-gray-900 mb-8 uppercase tracking-tighter">Order Initiated</h1>
         <p className="text-sm font-bold uppercase tracking-[0.2em] text-gray-500 mb-8">Authorization confirmed. ID: ORD-1029</p>
         <p className="text-gray-600 mb-12 text-xs uppercase tracking-[0.2em]">Rerouting to control center...</p>
         <div className="animate-pulse flex space-x-4 justify-center">
           <div className="h-1 w-12 bg-gray-700"></div>
           <div className="h-1 w-12 bg-gray-700 animation-delay-200"></div>
-          <div className="h-1 w-12 bg-orange-500 animation-delay-400"></div>
+          <div className="h-1 w-12 bg-brand-accent animation-delay-400"></div>
         </div>
       </div>
     );
@@ -44,27 +44,27 @@ export default function Checkout() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-12">
               <div>
                 <label className="block text-[0.6rem] font-bold uppercase tracking-[0.2em] text-gray-500 mb-2">First Name</label>
-                <input required type="text" className="w-full px-4 py-4 bg-gray-50 editorial-border text-gray-200 focus:border-orange-500 focus:outline-none transition-colors" defaultValue="John" />
+                <input required type="text" className="w-full px-4 py-4 bg-gray-50 editorial-border text-gray-900 focus:border-brand-accent focus:outline-none transition-colors" defaultValue="John" />
               </div>
               <div>
                 <label className="block text-[0.6rem] font-bold uppercase tracking-[0.2em] text-gray-500 mb-2">Last Name</label>
-                <input required type="text" className="w-full px-4 py-4 bg-gray-50 editorial-border text-gray-200 focus:border-orange-500 focus:outline-none transition-colors" defaultValue="Doe" />
+                <input required type="text" className="w-full px-4 py-4 bg-gray-50 editorial-border text-gray-900 focus:border-brand-accent focus:outline-none transition-colors" defaultValue="Doe" />
               </div>
               <div className="sm:col-span-2">
                 <label className="block text-[0.6rem] font-bold uppercase tracking-[0.2em] text-gray-500 mb-2">Email Identity</label>
-                <input required type="email" className="w-full px-4 py-4 bg-gray-50 editorial-border text-gray-200 focus:border-orange-500 focus:outline-none transition-colors" defaultValue="john.doe@example.com" />
+                <input required type="email" className="w-full px-4 py-4 bg-gray-50 editorial-border text-gray-900 focus:border-brand-accent focus:outline-none transition-colors" defaultValue="john.doe@example.com" />
               </div>
               <div className="sm:col-span-2">
                 <label className="block text-[0.6rem] font-bold uppercase tracking-[0.2em] text-gray-500 mb-2">Routing Address</label>
-                <input required type="text" className="w-full px-4 py-4 bg-gray-50 editorial-border text-gray-200 focus:border-orange-500 focus:outline-none transition-colors" defaultValue="123 Main St" />
+                <input required type="text" className="w-full px-4 py-4 bg-gray-50 editorial-border text-gray-900 focus:border-brand-accent focus:outline-none transition-colors" defaultValue="123 Main St" />
               </div>
               <div>
                 <label className="block text-[0.6rem] font-bold uppercase tracking-[0.2em] text-gray-500 mb-2">Municipality</label>
-                <input required type="text" className="w-full px-4 py-4 bg-gray-50 editorial-border text-gray-200 focus:border-orange-500 focus:outline-none transition-colors" defaultValue="New York" />
+                <input required type="text" className="w-full px-4 py-4 bg-gray-50 editorial-border text-gray-900 focus:border-brand-accent focus:outline-none transition-colors" defaultValue="New York" />
               </div>
               <div>
                 <label className="block text-[0.6rem] font-bold uppercase tracking-[0.2em] text-gray-500 mb-2">Postal Code</label>
-                <input required type="text" className="w-full px-4 py-4 bg-gray-50 editorial-border text-gray-200 focus:border-orange-500 focus:outline-none transition-colors" defaultValue="10001" />
+                <input required type="text" className="w-full px-4 py-4 bg-gray-50 editorial-border text-gray-900 focus:border-brand-accent focus:outline-none transition-colors" defaultValue="10001" />
               </div>
             </div>
 
@@ -72,13 +72,13 @@ export default function Checkout() {
             
             <div className="space-y-4 mb-12">
               <div className="flex items-center p-4 editorial-border bg-gray-50">
-                <input id="credit-card" name="payment-method" type="radio" defaultChecked className="h-4 w-4 text-orange-500 focus:ring-orange-500 bg-white border-gray-700" />
+                <input id="credit-card" name="payment-method" type="radio" defaultChecked className="h-4 w-4 text-brand-accent focus:ring-brand-accent bg-white border-gray-700" />
                 <label htmlFor="credit-card" className="ml-4 block text-xs font-bold uppercase tracking-[0.1em] text-gray-700">
                   Secure Data Transfer
                 </label>
               </div>
               <div className="flex items-center p-4 editorial-border bg-gray-50">
-                <input id="paypal" name="payment-method" type="radio" className="h-4 w-4 text-orange-500 focus:ring-orange-500 bg-white border-gray-700" />
+                <input id="paypal" name="payment-method" type="radio" className="h-4 w-4 text-brand-accent focus:ring-brand-accent bg-white border-gray-700" />
                 <label htmlFor="paypal" className="ml-4 block text-xs font-bold uppercase tracking-[0.1em] text-gray-700">
                   External Gateway
                 </label>
@@ -88,15 +88,15 @@ export default function Checkout() {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
               <div className="sm:col-span-2">
                 <label className="block text-[0.6rem] font-bold uppercase tracking-[0.2em] text-gray-500 mb-2">Sequence</label>
-                <input required type="text" className="w-full px-4 py-4 bg-gray-50 editorial-border text-gray-200 focus:border-orange-500 focus:outline-none transition-colors" placeholder="0000 0000 0000 0000" />
+                <input required type="text" className="w-full px-4 py-4 bg-gray-50 editorial-border text-gray-900 focus:border-brand-accent focus:outline-none transition-colors" placeholder="0000 0000 0000 0000" />
               </div>
               <div>
                 <label className="block text-[0.6rem] font-bold uppercase tracking-[0.2em] text-gray-500 mb-2">Cycle</label>
-                <input required type="text" className="w-full px-4 py-4 bg-gray-50 editorial-border text-gray-200 focus:border-orange-500 focus:outline-none transition-colors" placeholder="MM/YY" />
+                <input required type="text" className="w-full px-4 py-4 bg-gray-50 editorial-border text-gray-900 focus:border-brand-accent focus:outline-none transition-colors" placeholder="MM/YY" />
               </div>
               <div>
                 <label className="block text-[0.6rem] font-bold uppercase tracking-[0.2em] text-gray-500 mb-2">Verification CVC</label>
-                <input required type="text" className="w-full px-4 py-4 bg-gray-50 editorial-border text-gray-200 focus:border-orange-500 focus:outline-none transition-colors" placeholder="123" />
+                <input required type="text" className="w-full px-4 py-4 bg-gray-50 editorial-border text-gray-900 focus:border-brand-accent focus:outline-none transition-colors" placeholder="123" />
               </div>
             </div>
           </form>
@@ -115,7 +115,7 @@ export default function Checkout() {
             <div className="text-gray-500 border-b border-gray-200 pb-8 mb-8 font-bold uppercase tracking-[0.1em] text-xs">
               <div className="flex justify-between">
                 <span>Routing Fee</span>
-                <span className="text-orange-500">Comped</span>
+                <span className="text-brand-accent">Comped</span>
               </div>
             </div>
 
@@ -126,13 +126,13 @@ export default function Checkout() {
 
             <button 
               onClick={handlePlaceOrder}
-              className="w-full flex justify-center py-5 px-4 text-xs font-bold uppercase tracking-[0.2em] text-gray-50 bg-gray-900 hover:bg-orange-500 transition-colors duration-500"
+              className="w-full flex justify-center py-5 px-4 text-xs font-bold uppercase tracking-[0.2em] text-gray-50 bg-gray-900 hover:bg-brand-accent transition-colors duration-500"
             >
               Finalize Sequence
             </button>
 
             <div className="mt-8 text-center text-xs font-bold uppercase tracking-[0.2em]">
-              <Link to="/cart" className="text-gray-500 hover:text-orange-500 transition-colors">Abort & Return</Link>
+              <Link to="/cart" className="text-gray-500 hover:text-brand-accent transition-colors">Abort & Return</Link>
             </div>
           </div>
         </div>

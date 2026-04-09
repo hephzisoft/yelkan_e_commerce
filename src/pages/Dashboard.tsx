@@ -20,7 +20,7 @@ export default function Dashboard() {
   if (loading || !user) {
     return (
       <div className="max-w-7xl mx-auto px-4 py-32 flex justify-center border-b border-gray-200">
-        <div className="animate-spin rounded-none h-12 w-12 border-2 border-gray-200 border-t-orange-500"></div>
+        <div className="animate-spin rounded-none h-12 w-12 border-2 border-gray-200 border-t-brand-accent"></div>
       </div>
     );
   }
@@ -42,7 +42,7 @@ export default function Dashboard() {
             </div>
             
             <nav className="space-y-0 text-xs font-bold uppercase tracking-[0.2em]">
-              <a href="#" className="flex items-center px-4 py-4 bg-gray-50 text-orange-500 editorial-border border-b-0 transition-colors">
+              <a href="#" className="flex items-center px-4 py-4 bg-gray-50 text-brand-accent editorial-border border-b-0 transition-colors">
                 <Package className="w-4 h-4 mr-4" /> Operations
               </a>
               <a href="#" className="flex items-center px-4 py-4 text-gray-500 hover:text-gray-700 hover:bg-gray-200 editorial-border border-b-0 transition-colors">

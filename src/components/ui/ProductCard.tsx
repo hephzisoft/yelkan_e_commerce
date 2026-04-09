@@ -20,13 +20,13 @@ export default function ProductCard({ product }: ProductCardProps) {
             className="w-full h-48 object-cover object-center group-hover:scale-105 transition-transform duration-500"
           />
         </div>
-        <div className="absolute top-4 right-4 bg-orange-500 px-3 py-1 text-[0.6rem] uppercase tracking-[0.2em] font-bold text-gray-50 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+        <div className="absolute top-4 right-4 bg-brand-accent px-3 py-1 text-[0.6rem] uppercase tracking-[0.2em] font-bold text-gray-50 transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
           {product.category}
         </div>
       </Link>
       <div className="p-6 flex flex-col flex-grow">
         <Link to={`/products/${product.id}`}>
-          <h3 className="text-xl font-serif italic text-gray-900 group-hover:text-orange-500 transition-colors line-clamp-1">{product.name}</h3>
+          <h3 className="text-xl font-serif italic text-gray-900 group-hover:text-brand-accent transition-colors line-clamp-1">{product.name}</h3>
         </Link>
         <p className="mt-3 text-xs uppercase tracking-[0.1em] text-gray-500 line-clamp-2 mb-6">{product.description}</p>
         
@@ -37,7 +37,7 @@ export default function ProductCard({ product }: ProductCardProps) {
               e.preventDefault();
               addToCart(product, 1);
             }}
-            className="text-gray-600 hover:text-orange-500 transition-colors flex items-center justify-center cursor-pointer group/btn"
+            className="text-gray-600 hover:text-brand-accent transition-colors flex items-center justify-center cursor-pointer group/btn"
             aria-label="Add to cart"
           >
             <span className="uppercase tracking-[0.2em] text-[0.6rem] font-bold mr-2 opacity-0 -translate-x-2 group-hover/btn:opacity-100 group-hover/btn:translate-x-0 transition-all duration-300">Add</span>
