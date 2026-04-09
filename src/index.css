@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'AvantGardeBrand';
+  src: url('/src/assets/fonts/AVGARDN_2.TTF') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvantGardeBrand';
+  src: url('/src/assets/fonts/AVGARDD_2.TTF') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'AvantGardeBrand';
+  src: url('/src/assets/fonts/AVGARDDO_2.TTF') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@theme {
+  --font-serif: 'AvantGardeBrand', 'Playfair Display', serif;
+  --font-sans: 'AvantGardeBrand', 'Syne', ui-sans-serif, system-ui, sans-serif;
+  
+  --color-green-50: #eef5eb;
+  --color-green-100: #daebd6;
+  --color-green-500: #6FA92E; /* Secondary */
+  --color-green-600: #355C31; /* Main */
+  --color-green-700: #2c4c28;
+  --color-green-900: #1a2e18;
+  
+  --color-orange-50: #fffaef;
+  --color-orange-100: #feefda;
+  --color-orange-400: #f8a648;
+  --color-orange-500: #F7972B; /* Accent */
+  --color-orange-600: #e08927;
+
+  /* Apple-like Squircle Soft Radii */
+  --radius-md: 0.75rem;    /* 12px */
+  --radius-lg: 1rem;       /* 16px */
+  --radius-xl: 1.25rem;    /* 20px */
+  --radius-2xl: 1.5rem;    /* 24px */
+  --radius-3xl: 2rem;      /* 32px */
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    @apply text-gray-900 bg-gray-50 antialiased selection:bg-green-500 selection:text-white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+}
+
+@layer utilities {
+  .noise-bg {
+    position: relative;
+  }
+  
+  .noise-bg::before {
+    display: none;
+  }
+
+  .editorial-border {
+    @apply border border-gray-100 rounded-2xl bg-white shadow-sm;
+  }
+  
+  .animate-marquee {
+    animation: marquee 25s linear infinite;
+  }
+  
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-100%); }
+  }
+  
+  .clip-reveal {
+    animation: clipReveal 1.2s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+  }
+  
+  @keyframes clipReveal {
+    to { clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+  }
+}
