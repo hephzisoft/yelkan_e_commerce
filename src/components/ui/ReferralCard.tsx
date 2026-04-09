@@ -10,7 +10,7 @@ export default function ReferralCard({ user }: ReferralCardProps) {
 
   const copyToClipboard = () => {
     navigator.clipboard.writeText(referralLink);
-    
+  
   };
 
   return (

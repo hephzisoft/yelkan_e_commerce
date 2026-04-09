@@ -57,10 +57,7 @@ export default function Home() {
                   className="w-full h-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
                 />
               </div>
-              <div className="absolute -bottom-10 -left-10 bg-stone-950 editorial-border p-6 shadow-2xl z-30">
-                <span className="block text-4xl font-serif italic text-orange-500 mb-1">100%</span>
-                <span className="uppercase tracking-[0.2em] text-xs font-bold text-stone-400">Pure Organic</span>
-              </div>
+             
             </div>
           </div>
         </div>
