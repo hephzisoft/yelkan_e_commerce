@@ -25,18 +25,18 @@
   --font-serif: 'AvantGardeBrand', 'Playfair Display', serif;
   --font-sans: 'AvantGardeBrand', 'Syne', ui-sans-serif, system-ui, sans-serif;
   
-  --color-green-50: #eef5eb;
-  --color-green-100: #daebd6;
-  --color-green-500: #6FA92E; /* Secondary */
-  --color-green-600: #355C31; /* Main */
-  --color-green-700: #2c4c28;
-  --color-green-900: #1a2e18;
+  --color-brand-main: #355C31;
+  --color-brand-accent: #F7972B;
+  --color-brand-secondary: #6FA92E;
+
+  --color-brand-main-light: #4a7d45;
+  --color-brand-main-dark: #20381e;
+
+  --color-brand-accent-light: #f9af5b;
+  --color-brand-accent-dark: #e57c08;
   
-  --color-orange-50: #fffaef;
-  --color-orange-100: #feefda;
-  --color-orange-400: #f8a648;
-  --color-orange-500: #F7972B; /* Accent */
-  --color-orange-600: #e08927;
+  --color-brand-secondary-light: #8bc84b;
+  --color-brand-secondary-dark: #517b22;
 
   /* Apple-like Squircle Soft Radii */
   --radius-md: 0.75rem;    /* 12px */
@@ -49,7 +49,7 @@
 @layer base {
   body {
     font-family: var(--font-sans);
-    @apply text-gray-900 bg-gray-50 antialiased selection:bg-green-500 selection:text-white;
+    @apply text-gray-900 bg-gray-50 antialiased selection:bg-brand-secondary selection:text-white;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }

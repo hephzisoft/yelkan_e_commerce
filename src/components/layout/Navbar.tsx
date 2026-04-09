@@ -16,25 +16,25 @@ export default function Navbar() {
               <img src="/YELKAN.png" alt="Yelkan Foods Logo" className="h-16 sm:h-20 md:h-24 w-auto object-contain" />
             </Link>
             <div className="hidden md:ml-12 md:flex md:space-x-8 items-center">
-              <Link to="/products" className="text-gray-600 hover:text-orange-500 font-medium transition-colors uppercase tracking-[0.1em] text-sm">
+              <Link to="/products" className="text-gray-600 hover:text-brand-accent font-medium transition-colors uppercase tracking-[0.1em] text-sm">
                 Shop
               </Link>
-              <Link to="/products?business=true" className="text-gray-600 hover:text-orange-500 font-medium transition-colors uppercase tracking-[0.1em] text-sm">
+              <Link to="/products?business=true" className="text-gray-600 hover:text-brand-accent font-medium transition-colors uppercase tracking-[0.1em] text-sm">
                 B2B Wholesale
               </Link>
-              <Link to="/referrals" className="text-orange-500 hover:text-orange-600 font-bold transition-colors uppercase tracking-[0.1em] text-sm bg-orange-50 px-4 py-2 rounded-full border border-orange-200">
+              <Link to="/referrals" className="text-brand-accent hover:text-brand-accent-dark font-bold transition-colors uppercase tracking-[0.1em] text-sm bg-brand-accent/10 px-4 py-2 rounded-full border border-brand-accent/30">
                 Refer & Earn
               </Link>
             </div>
           </div>
           <div className="hidden md:flex items-center space-x-6">
-            <Link to="/dashboard" className="text-gray-500 hover:text-orange-500 transition-colors">
+            <Link to="/dashboard" className="text-gray-500 hover:text-brand-accent transition-colors">
               <User className="h-6 w-6" />
             </Link>
-            <Link to="/cart" className="text-gray-500 hover:text-orange-500 relative transition-colors">
+            <Link to="/cart" className="text-gray-500 hover:text-brand-accent relative transition-colors">
               <ShoppingCart className="h-6 w-6" />
               {cartCount > 0 && (
-                <span className="absolute -top-2 -right-2 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-gray-900 bg-orange-500 rounded-full">
+                <span className="absolute -top-2 -right-2 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-gray-900 bg-brand-accent/100 rounded-full">
                   {cartCount}
                 </span>
               )}
@@ -43,7 +43,7 @@ export default function Navbar() {
           <div className="flex items-center md:hidden">
             <button 
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-500 hover:text-orange-500 focus:outline-none"
+              className="text-gray-500 hover:text-brand-accent focus:outline-none"
             >
               <Menu className="h-6 w-6" />
             </button>
@@ -54,11 +54,11 @@ export default function Navbar() {
       {isMenuOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t border-gray-100">
-            <Link to="/products" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-orange-500 hover:bg-gray-50">Shop</Link>
-            <Link to="/products?business=true" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-orange-500 hover:bg-gray-50">B2B Wholesale</Link>
-            <Link to="/referrals" className="block px-3 py-2 rounded-md text-base font-bold text-orange-500 hover:text-orange-600 hover:bg-gray-50">Refer & Earn</Link>
-            <Link to="/dashboard" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-orange-500 hover:bg-gray-50">Account</Link>
-            <Link to="/cart" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-orange-500 hover:bg-gray-50">Cart ({cartCount})</Link>
+            <Link to="/products" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-brand-accent hover:bg-gray-50">Shop</Link>
+            <Link to="/products?business=true" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-brand-accent hover:bg-gray-50">B2B Wholesale</Link>
+            <Link to="/referrals" className="block px-3 py-2 rounded-md text-base font-bold text-brand-accent hover:text-brand-accent-dark hover:bg-gray-50">Refer & Earn</Link>
+            <Link to="/dashboard" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-brand-accent hover:bg-gray-50">Account</Link>
+            <Link to="/cart" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-brand-accent hover:bg-gray-50">Cart ({cartCount})</Link>
           </div>
         </div>
       )}

@@ -22,9 +22,9 @@ export default function OrderCard({ order }: OrderCardProps) {
         <div className="flex flex-row sm:flex-col items-center sm:items-end justify-between w-full sm:w-auto gap-3 border-t sm:border-t-0 border-gray-200 pt-4 sm:pt-0">
           <span className="font-serif italic font-black text-xl text-gray-900">${order.total.toFixed(2)}</span>
           <span className={`px-3 py-1 text-[0.6rem] font-bold uppercase tracking-[0.2em] editorial-border bg-white
-            ${order.status === 'Delivered' ? 'text-green-500 border-green-500/20' : ''}
+            ${order.status === 'Delivered' ? 'text-brand-main border-brand-main/20' : ''}
             ${order.status === 'Shipped' ? 'text-blue-500 border-blue-500/20' : ''}
-            ${order.status === 'Processing' ? 'text-orange-500 border-orange-500/20' : ''}
+            ${order.status === 'Processing' ? 'text-brand-accent border-brand-accent/20' : ''}
             ${order.status === 'Pending' ? 'text-gray-600 border-gray-700' : ''}
           `}>
             {order.status}

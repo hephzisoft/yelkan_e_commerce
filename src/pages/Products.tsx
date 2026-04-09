@@ -57,7 +57,7 @@ export default function Products() {
                     onClick={() => handleCategorySelect(category)}
                     className={`block w-full text-left py-4 text-xs font-bold uppercase tracking-[0.15em] transition-all duration-300 ${
                       selectedCategory.toLowerCase() === category.toLowerCase()
-                        ? 'text-orange-500 pl-4 bg-gray-50/50'
+                        ? 'text-brand-accent pl-4 bg-gray-50/50'
                         : 'text-gray-500 hover:text-gray-700 hover:pl-2'
                     }`}
                   >

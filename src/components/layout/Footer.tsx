@@ -14,28 +14,28 @@ export default function Footer() {
               Bringing premium and organic protein products directly to your doorstep. Uncompromising quality.
             </p>
             <div className="flex space-x-6 mt-8">
-              <a href="#" className="text-gray-500 hover:text-orange-500 transition-colors uppercase tracking-[0.2em] text-[0.6rem] font-bold">Facebook</a>
-              <a href="#" className="text-gray-500 hover:text-orange-500 transition-colors uppercase tracking-[0.2em] text-[0.6rem] font-bold">Twitter</a>
-              <a href="#" className="text-gray-500 hover:text-orange-500 transition-colors uppercase tracking-[0.2em] text-[0.6rem] font-bold">Instagram</a>
+              <a href="#" className="text-gray-500 hover:text-brand-accent transition-colors uppercase tracking-[0.2em] text-[0.6rem] font-bold">Facebook</a>
+              <a href="#" className="text-gray-500 hover:text-brand-accent transition-colors uppercase tracking-[0.2em] text-[0.6rem] font-bold">Twitter</a>
+              <a href="#" className="text-gray-500 hover:text-brand-accent transition-colors uppercase tracking-[0.2em] text-[0.6rem] font-bold">Instagram</a>
             </div>
           </div>
           
           <div>
             <h3 className="text-[0.6rem] font-bold tracking-[0.3em] uppercase text-gray-900 mb-6">Shop</h3>
             <ul className="space-y-4 text-xs font-semibold uppercase tracking-[0.1em] text-gray-500">
-              <li><Link to="/products" className="hover:text-orange-500 transition-colors">All Products</Link></li>
-              <li><Link to="/products?category=poultry" className="hover:text-orange-500 transition-colors">Poultry</Link></li>
-              <li><Link to="/products?category=meat" className="hover:text-orange-500 transition-colors">Meat</Link></li>
-              <li><Link to="/products?category=eggs" className="hover:text-orange-500 transition-colors">Eggs</Link></li>
+              <li><Link to="/products" className="hover:text-brand-accent transition-colors">All Products</Link></li>
+              <li><Link to="/products?category=poultry" className="hover:text-brand-accent transition-colors">Poultry</Link></li>
+              <li><Link to="/products?category=meat" className="hover:text-brand-accent transition-colors">Meat</Link></li>
+              <li><Link to="/products?category=eggs" className="hover:text-brand-accent transition-colors">Eggs</Link></li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-[0.6rem] font-bold tracking-[0.3em] uppercase text-gray-900 mb-6">Account</h3>
             <ul className="space-y-4 text-xs font-semibold uppercase tracking-[0.1em] text-gray-500">
-              <li><Link to="/dashboard" className="hover:text-orange-500 transition-colors">My Profile</Link></li>
-              <li><Link to="/dashboard" className="hover:text-orange-500 transition-colors">Orders</Link></li>
-              <li><Link to="/referrals" className="hover:text-orange-500 transition-colors">Refer & Earn</Link></li>
+              <li><Link to="/dashboard" className="hover:text-brand-accent transition-colors">My Profile</Link></li>
+              <li><Link to="/dashboard" className="hover:text-brand-accent transition-colors">Orders</Link></li>
+              <li><Link to="/referrals" className="hover:text-brand-accent transition-colors">Refer & Earn</Link></li>
             </ul>
           </div>
 
